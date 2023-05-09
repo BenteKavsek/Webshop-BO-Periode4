@@ -2,7 +2,9 @@
 ## Repository voor de Bo opdracht van periode 4
 
 > Naam bedrijf: HappyHour
+> 
 > Product categorie: (Drank)spellen
+> 
 > Stijl: 'Geurwolkje'
 
 **Trello persoonlijke Product-backlog:**
