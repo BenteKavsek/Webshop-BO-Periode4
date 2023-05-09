@@ -1,0 +1,47 @@
+/* de basics */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header  img{
+    width: 25rem;
+}
+
+header h3{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: black;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 1rem;
+}
+
+
+
