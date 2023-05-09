@@ -6,14 +6,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    --white: #fff;
+    --black: #212121;
+    --dark-gray: #333;
+    --pink: #DBB7C0;
+    --salmon: #F9E1D6;
+}
+
 html{
     font-size: 65.5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container{
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    position: relative;
 }
 
 header{
@@ -24,12 +34,11 @@ header{
 }
 
 header  img{
-    width: 25rem;
+    width: 23rem;
 }
 
 header h3{
     font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
@@ -37,11 +46,59 @@ header > nav > a{
     text-decoration: none;
     color: black;
 
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     margin: 0 1rem;
 }
 
+/* Hero Section */
 
 
+.heroSection{
+    background-color: var(--salmon);
+}
+
+.HeroSection-content{
+    display: flex;
+    align-items: center;
+}
+
+.HeroSection-content img{
+    width: 60%;
+    margin: 10rem 0;
+}
+
+.slogan h2{
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.slogan button{
+    margin: 2rem 0;
+
+    padding: 1rem 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var( --black);
+    
+    transition: all;
+
+    cursor: pointer;
+}
+
+.slogan button:hover{
+    border: 2px solid var( --white);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
