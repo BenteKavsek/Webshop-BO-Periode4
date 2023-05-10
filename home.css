@@ -1,0 +1,181 @@
+/* de basics */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #212121;
+    --dark-gray: #333;
+    --pink: #DBB7C0;
+    --pink-hightlights: #e09c8c;
+    --salmon: #e2c7b5;
+}
+
+html{
+    font-size: 65.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-top{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+    opacity: 50%;
+}
+
+.header-top img{
+    width: 20rem;
+}
+
+.line{
+    border-bottom: 1px solid rgba(168,168,168,.2);
+}
+
+.header-bottom{
+    display: flex;
+}
+
+.header-bottom nav{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: end;
+}
+
+.header-bottom nav a{
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    align-items: center;
+
+    line-height: 5rem;
+}
+
+    /* Pijltje van dropdowns */
+.header-bottom nav a::after{
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border-width: 0 0.15rem 0.15rem 0;
+    border-style: solid;
+
+    transform: rotate(45deg);
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #bbb;
+    margin: 0 0.8rem;
+}
+
+/* Hero Section */
+
+
+.heroSection{
+    background-color: var(--salmon);
+}
+
+.HeroSection-content{
+    display: flex;
+    align-items: center;
+}
+
+.HeroSection-content img{
+    width: 60%;
+    margin: 10rem 0;
+}
+
+.slogan h2{
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.slogan button{
+    margin: 2rem 0;
+
+    padding: 1rem 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var( --black);
+    
+    transition: all;
+
+    cursor: pointer;
+}
+
+.slogan button:hover{
+    border: 2px solid var( --white);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+
+.star-twelve {
+    background: var(--pink-hightlights);
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 80px;
+      background: var(--pink-hightlights);
+      z-index: 10;
+    }
+  
+    &::before {
+      transform: rotate(30deg);
+    }
+  
+    &::after {
+      transform: rotate(60deg);
+    }
+  }
+
+.highlight-text{
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
