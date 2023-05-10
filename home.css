@@ -110,6 +110,7 @@ html{
 .HeroSection-content{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .HeroSection-content img{
@@ -152,46 +153,57 @@ html{
     transition-property: all;
 }
 
+/* Ster voor reclame */
 
 .star{
     display: flex;
     align-items: center;
   }
   
-  .star {
-    position: relative;
-    width: 200px;
-    height: 200px;
+.star {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
     background: #e09c8c;
     
     flex-direction: column;
     justify-content: space-evenly;
-  }
+
+    left: 38%;
+    top: 17%;
+}
   
-  .star:before, .star:after {
+.star:before, .star:after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: #e09c8c;
-  }
-  .star:before { transform: rotate(60deg); }
-  .star:after { transform: rotate(30deg); }
+}
 
-  .star-text1, .star-text2 {
+.star:before { transform: rotate(60deg); }
+.star:after { transform: rotate(30deg); }
+
+.star-text1, .star-text2 {
     color: #FFF;
     font-weight: bold;
     margin: 0;
-  }
+}
   
-  .star-text1 {
-    font-size: 7rem;
-    z-index: 1;
-  }
+.star-text1 {
+    font-size: 6rem;
+    margin-bottom: -1rem;
+}
   
-  .star-text2 {
-    font-size: 4.5rem;
+.star-text2 {
+    font-size: 3.7rem;
+    margin-top: -1rem;
+  }
+
+  .star-text1, .star-text2  {
+    transform: rotate(10deg);
     z-index: 1;
+    align-self: center;
   }
 
 .highlight-text{
