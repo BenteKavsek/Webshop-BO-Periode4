@@ -10,6 +10,7 @@
     --white: #fff;
     --black: #212121;
     --dark-gray: #333;
+    --light-gray: #9b9b9b;;
     --pink: #DBB7C0;
     --pink-hightlights: #e09c8c;
     --pink-light: #f4e4dc;
@@ -22,11 +23,16 @@ html{
 }
 
 .container{
-    width: 85%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
-    align-items: center;
-    position: relative;
+}
+
+.containercontent{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5rem 0;
 }
 
 .header-top{
@@ -45,6 +51,10 @@ html{
 
 .header-mid img{
     width: 20rem;
+}
+
+form{
+    display: flex;
 }
 
 form input, form button{
@@ -204,9 +214,10 @@ form input, form button{
 }
 
 .reclame-text > h2{
-    font-size: 4.9rem;
+    font-size: 4.2rem;
     font-weight: 500;
     transform: rotate(-5deg);
+    margin-left: 4rem;
 }
 
 .reclame-text > h3{
@@ -231,29 +242,315 @@ form input, form button{
 }
 
 .slogan button{
-    width: 30%;
+    width: 35%;
+}
+
+
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 1rem 2rem;
-    text-align: center;
     line-height: 1.8rem;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
     
-    background-color: var(--black);
     color: var(--white);
+    background-color: var(--black);
     border: 2px solid var( --black);
     
     transition: all;
-
     cursor: pointer;
 }
 
-.slogan button:hover{
+button:hover{
     border: 2px solid var( --white);
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     transition-property: all;
+}
+
+/* Promotie stuk */
+.product-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product-description li{
+    list-style-position: inside;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.promotion button{
+    width: 50%;
+    margin: 2rem 0;
+}
+.product-big{
+    background-color: var(--white);
+    padding: 5rem 0;
+    display: flex;
+}
+
+.product-big img{
+    width: 60rem;
+}
+
+.product-big-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    font: inherit;
+}
+
+.product-big-text span{
+    padding: 1rem;
+    font-size: 2.3rem;
+    background-color: #ECECEC;
+    border-radius: 2rem;
+    width: 18%;
+}
+
+.product-big-text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-big-text p{
+    font-size: 1.4rem;
+    color: var(--light-gray);
+}
+
+.slogan a, .product-big-text a{
+    text-decoration: none;
+}
+
+.products-small{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.small-product{
+    list-style: none;
+    padding: 1rem;
+    width: 30rem;
+    height: 40rem;
+}
+
+.small-product img{
+    width: 100%;
+    padding: 3rem;
+    height: 80%;
+    object-fit: contain;
+}
+
+.small-product a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 600;
+
+    height: 10%;
+}
+
+.small-product a:hover{
+    text-decoration: underline;
+}
+
+.small-product .price{
+    font-size: 1.6rem;
+    color: #949494;
+    text-align: center;
+    margin: 1rem;
+    height: 10%;
+}
+
+.promotion div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.promotion div button{
+    width: 15%;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 2rem 0;
+}
+
+.feature{
+    height: 30rem;
+    width: 40rem;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 2rem;
+}
+
+.feature i{
+    font-size: 6rem;
+    color: var(--pink);
+    height: 30%;
+}
+
+.feature h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    height: 10%;
+}
+
+.feature p{
+    font-size: 1.4rem;
+    color: var(--light-gray);
+    line-height: 1.7;
+    vertical-align: baseline;
+    height: 60%;
+}
+
+.feature p a{
+    color: var(--pink);
+    font-weight: 500;
+}
+
+.reviews{
+    background-color: lightgray;
+    font-size: 12rem;
+    height: 50rem;
+}
+
+footer{
+    background-color: var(--pink-light);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 0 3rem 0;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.footer-top img{
+    width: 20%;
+}
+
+.footer-top p{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.footer-lists{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 8rem;
+}
+
+.footer-lists .category{
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #bbb;
+}
+
+.contact h4{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.socials{
+    margin-top: 4rem;
+}
+
+.social-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a{
+    background-color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-links a:hover{
+    background-color: black;
+}
+
+.social-links a i{
+    font-size: 2rem;
+    color: var(--pink);
+    padding: 1rem;
+}
+
+
+.footer-lists .categoryElement{
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.8);
+    list-style: none;
+    margin: 1.2rem 0;
+}
+
+.footer-lists .categoryElement:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--gray);
+    font-weight: 400;
+    gap: 1rem;
 }
