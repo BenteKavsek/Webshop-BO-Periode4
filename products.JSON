@@ -1,0 +1,36 @@
+{
+    "games": [
+        {
+            "name": "Party or Naughty",
+            "price": "€19.99",
+            "variation-1": "Originl (NL)",
+            "variation-2": "Originl (ENG)",
+            "variation-3": "Date Night (NL)",
+            "variation-4": "Date Night (ENG)"
+        },
+        {
+            "name": "Ringtoss",
+            "price": "€19.95",
+            "variation-1": "Wit",
+            "variation-2": "Bruin",
+            "variation-3": "Roze",
+            "variation-4": "Zwart"
+        },
+        {
+            "name": "Beerpong",
+            "price": "€10.55",
+            "variation-1": "2x 6 cups",
+            "variation-2": "2x 10 cups",
+            "variation-3": "2x 15 cups"
+        },
+        {
+            "name": " ",
+            "price": "€ ",
+            "variation-1": " ",
+            "variation-2": " ",
+            "variation-3": " ",
+            "variation-4": " "
+        }
+
+    ]
+}

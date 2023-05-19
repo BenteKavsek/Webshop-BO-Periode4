@@ -10,55 +10,63 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
-    <link rel="icon" href="img/link-logo.web" type="image/icon type">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="img/link-logo.webp" type="image/icon type">
+    <title>HappyHour webshop</title>
 </head>
 
 <body>
 
 
     <header>
+        <section class="header-top"></section>
 
-        <section class="header-top">
-
-        </section>
-
-        <section class="container">
+        <div class="container">
             <section class="header-mid">
-                <a href="index.html"><img src="img/logo.webp" alt="Logo van HappyHour webshop"></a>
 
+                <a href="index.html"><img src="img/logo.webp" alt="Logo van HappyHour webshop"></a>
                 <form action="/action_page.php">
                     <input type="text" placeholder="Zoek product">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
 
             </section>
-        </section>
+        </div>
 
         <div class="line"></div>
 
-        <section class="container">
-            <section class="header-bottom">
+        <div class="container">
+            <section class="header-nav">
 
                 <nav>
-                    <a href="#">Spellen</a>
-                    <a href="#">Sterke drank</a>
-                    <a href="#">Mixdrank</a>
-                    <a href="#">Extra's</a>
+                    <div>
+                        <a href="#">Spellen</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <a href="#">Sterke drank</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <a href="#">Mixdrank</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <a href="#">Extra's</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                 </nav>
 
             </section>
-        </section>
-
-
+        </div>
+        <div class="line"></div>
     </header>
 
 
     <main>
-
         <article class="heroSection">
-            <section class="containercontent">
+            <div class="containercontent">
                 <section class="HeroSection-content">
 
                     <img src="img/drankspellen-collection.webp" alt="Foto van 3 verschillende drankspellen">
@@ -75,21 +83,21 @@
 
                             <section class="slogan">
                                 <h2>If u never drink, <br> how will your friends know <br> you love them at 2AM?</h2>
-                                <a href="#"><button href="#">Naar de shop</button></a>
-
+                                <a href="#"><button class="button" href="#">Naar de shop</button></a>
                             </section>
+
                         </section>
+
                     </section>
 
-
                 </section>
-            </section>
+            </div>
         </article>
 
         <article class="promotion">
             <section class="product-big containercontent">
 
-                <img src="img/partyOrNaugty/PNvoorkant.jpg" alt="">
+                <img src="img/partyOrNaugty/PNvoorkant.webp" alt="">
                 <section class="product-big-text">
 
                     <span>Featured</span>
@@ -97,13 +105,15 @@
 
                     <section class="product-description">
                         <p>Het is voor iedereen herkenbaar: het is weekend en er moet een mooie planning worden gemaakt.
-                             Zoals altijd is het fijn om weer samen te zijn, maar er ontbreekt nog wat actie en/of gezelligheid. 
-                             Het drinkspel Party or Naughty is hiervoor de ultieme oplossing!</p>
+                            Zoals altijd is het fijn om weer samen te zijn, maar er ontbreekt nog wat actie en/of
+                            gezelligheid.
+                            Het drinkspel Party or Naughty is hiervoor de ultieme oplossing!</p>
 
-                        <p>In dit doe- of drinkspel trekt de persoon die aan de beurt is een kaart. 
+                        <p>In dit doe- of drinkspel trekt de persoon die aan de beurt is een kaart.
                             Deze persoon voert de opdracht uit. Weiger je? Dan moet je drinken. </p>
-                        <p>Als de opdracht is voltooid, krijgt die persoon een punt. 
-                            De kaarten variëren van grappige, spannende, uitdagende en nog veel meer hilarische opdrachten en vragen!</p>
+                        <p>Als de opdracht is voltooid, krijgt die persoon een punt.
+                            De kaarten variëren van grappige, spannende, uitdagende en nog veel meer hilarische
+                            opdrachten en vragen!</p>
 
                         <ul>
                             <li>Verveel je nooit meer</li>
@@ -113,7 +123,7 @@
                         </ul>
                     </section>
 
-                    <a href=""><button>Bekijk spel</button></a>
+                    <a href=""><button class="button">Bekijk spel</button></a>
 
                 </section>
 
@@ -146,10 +156,10 @@
                     </li>
 
                 </ul>
-
                 <div>
-                    <button class="producten">Bekijk alle producten</button>
+                    <button class="producten button">Bekijk alle producten</button>
                 </div>
+
             </section>
         </article>
 
@@ -159,7 +169,8 @@
                 <li class="feature">
                     <i class="fa-regular fa-copyright"></i>
                     <h3>Originele spellen</h3>
-                    <p>Wij leveren altijd originele spellen, dus geen kopie of remake. zodat u altijd de beste kwaliteit spel in huis hebt.</p>
+                    <p>Wij leveren altijd originele spellen, dus geen kopie of remake. zodat u altijd de beste kwaliteit
+                        spel in huis hebt.</p>
                 </li>
 
                 <li class="feature">
@@ -171,24 +182,84 @@
                 <li class="feature">
                     <i class="fa-regular fa-comment"></i>
                     <h3>Klantenservice</h3>
-                    <p>Voor de meest gestelde vragen hebben wij onze <a href="">FAQ</a>. Mocht u nog andere vragen hebben in onze klanten service te bereiken
-                    via <a href="">telefoon</a> tussen 9:00 en 16:30 op werkdagen. <br> Via <a href="">Email</a> reagereren wij binnen 24 uur.</p>
+                    <p>Voor de meest gestelde vragen hebben wij onze <a href="">FAQ</a>. Mocht u nog andere vragen
+                        hebben in onze klanten service te bereiken
+                        via <a href="">telefoon</a> tussen 9:00 en 16:30 op werkdagen. <br> Via <a href="">Email</a>
+                        reagereren wij binnen 24 uur.</p>
                 </li>
 
                 <li class="feature">
                     <i class="fa-regular fa-envelope"></i>
                     <h3>Snelle bezorging</h3>
                     <p>Als u op werkdagen voor 14:00 besteld word u pakket de zelfde dag nog verstuurd! <br>
-                    De levertijd is gemiddeld 1-2 werkdagen, wilt u zeker zijn dat u uw pakketje binnen 2 dagen binnen heeft? Plaats u bestelling dan voor 10:00!</p>
+                        De levertijd is gemiddeld 1-2 werkdagen, wilt u zeker zijn dat u uw pakketje binnen 2 dagen
+                        binnen heeft? Plaats u bestelling dan voor 10:00!</p>
                 </li>
 
             </ul>
         </article>
 
-        <section class="reviews">
-            <h2>REVIEWS</h2>
-        </section>
+        <div class="containercontent">
+            <section class="reviews-wrapper">
 
+                <button class="arrow"><i class="fa-solid fa-angle-left"></i></button>
+
+                <ul class="reviews">
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Niet ingewikkel maar wel super leuke avond gehad. <br> Wat ons betreft echt een aanrader!</p>
+                            <img src="img/beerpong-drankspel.webp" alt="">
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Perfect kaartspel voor een leuke avond! <br>Plat verpakt dus makkelijk mee te nemen,
+                            je hebt gegarandeerd goed!</p>
+                            <img src="img/partyOrNaugty/PNvoorkant.webp" alt="">
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Goed en stevige kaarten, ook boekje met spellen erbij gekregen, prima!</p>
+                            <img src="img/kaarten.webp" alt="">
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Grappig spel, 2 categorieën dus je kan ook alleen één deel spelen mocht je niet heel close zijn
+                                met de groep</p>
+                            <img src="img/partyOrNaugty/PNvoorkant.webp" alt="">
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Prima spel, duurt wel langer dan gemiddeld</p>
+                            <img src="img/drankopoly.webp" alt="">
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <section class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</section>
+                        <div>
+                            <p>Heel leuk concept, <br> is de favoriet in onze groep!!!</p>
+                            <img src="img/roulette-drankspel.webp" alt="">
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="arrow"><i class="fa-solid fa-angle-right"></i></button>
+
+            </section>
+        </div>
 
     </main>
 

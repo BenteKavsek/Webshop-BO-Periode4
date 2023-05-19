@@ -1,0 +1,115 @@
+/* de basics */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #212121;
+    --dark-gray: #333;
+    --light-gray: #9b9b9b;;
+    --pink: #DBB7C0;
+    --pink-hightlights: #e09c8c;
+    --pink-light: #f4e4dc;
+    --salmon: #e2c7b5;
+}
+
+html{
+    font-size: 65.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    height: 100%;
+}
+
+.product{
+    width: 100%;
+    height: 100%;
+}
+
+.product-variations{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+figure.images{
+    width: 50%;
+    height: 100%;
+}
+
+.product-variations img{
+    width: 100%;
+}
+
+.choises{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titel{
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+
+.shopping-cart{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+}
+
+ul.variations{
+    display: flex;
+    gap: 1.5rem;
+}
+
+ul > li.variation{
+    list-style: none;
+}
+
+ul > li.variation > button{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 300;
+    
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    border: 2px solid rgba(168,168,168,.4);
+}
+
+ul > li.variation > button:hover{
+    background-color: #efefef;
+}
+
+.price{
+    margin: 4rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.add-to-cart-btn{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    
+}
+
+.add-to-cart-btn > button{
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    width: 30%;
+    
+}
