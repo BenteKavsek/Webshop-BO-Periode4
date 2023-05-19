@@ -53,28 +53,61 @@ html{
     width: 30%;
 }
 
-form{
-    display: flex;
+.cart{
+    font-size: 2.4rem; 
 }
 
-form input, form button{
-    padding: 1rem;
-    font-size: 1.5rem;
+.cart-btn{
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
 }
 
 .line{
     border-bottom: 1px solid rgba(168,168,168,.2);
 }
 
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    align-items: flex-end;
+    height: 3.5rem;
+}
+
+form input, form button{
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    height: 3.5rem;
+}
+
+form button{
+    background-color: #212121;
+    color: white;
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+}
+
 /* NAVIAGTIE MENU HEADER */
 .header-nav{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .header-nav nav{
     display: flex;
     gap: 2rem;
-    width: 100%;
     justify-content: end;
 }
 

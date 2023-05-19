@@ -24,10 +24,15 @@
             <section class="header-mid">
 
                 <a href="index.html"><img src="img/logo.webp" alt="Logo van HappyHour webshop"></a>
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Zoek product">
-                    <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+
+                <div class="header-right">
+                    
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Zoek product">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+    
+                </div>
 
             </section>
         </div>
@@ -56,7 +61,13 @@
                     </div>
                 </nav>
 
+                <div class="cart-btn">
+                    <i class="fa-solid fa-bag-shopping cart"></i>
+                    <p>€0,00</p>
+                </div>
+
             </section>
+            
         </div>
         <div class="line"></div>
     </header>
@@ -65,17 +76,17 @@
         <div class="containercontent">
             <section class=" product product-variations">
                 <figure class="images">
-                    <img id="productIMG" src="img/ringtoss-drankspel.webp" alt="">
+                    <img id="productIMG" src="img/Ringtoss/ringtoss-drankspel.webp" alt="">
                 </figure>
                 <div class="choises">
                     <div class="titel">
                         <h1>Ringtoss - Drankspel</h1>
                     </div>
                     <ul class="variations">
-                        <button onclick="changeVar('/img/ringtoss-drankspel.webp')" class="variation active">Bruin</button>
-                        <button onclick="changeVar('/img/test/blue.png')" class="variation">Blauw</button>
-                        <button onclick="changeVar('/img/test/black.jpeg')" class="variation">Zwart</button>
-                        <button onclick="changeVar('/img/test/pink.png')" class="variation">Roze</button>
+                        <button onclick="changeVar('/img/Ringtoss/ringtoss-drankspel.webp')" class="variation active">Bruin</button>
+                        <button onclick="changeVar('/img/Ringtoss/blue.png')" class="variation">Blauw</button>
+                        <button onclick="changeVar('/img/Ringtoss/black.jpeg')" class="variation">Zwart</button>
+                        <button onclick="changeVar('/img/Ringtoss/pink.png')" class="variation">Roze</button>
                     </ul>
                     <p class="price">€19.95</p>
                     <div class="add-to-cart-btn">
