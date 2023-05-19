@@ -220,6 +220,7 @@ button.button:hover{
 
 .product-big img{
     width: 60rem;
+    object-fit: contain;
 }
 
 .product-big-text{
