@@ -27,4 +27,10 @@ for(let i = 0; arrowButtons.length; i++){
     }
 }
 
-// INDIVIAL PRODUCT CHOISES
+// INDIVIDUAL PRODUCT CHOISES
+let choises = document.getElementsByClassName("variation");
+let activeFilter = document.getElementsByClassName("active");
+
+for (let i = 0; i < choises; i++){
+
+};

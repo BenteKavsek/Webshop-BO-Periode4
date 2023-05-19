@@ -65,34 +65,28 @@ figure.images{
     margin: 2rem 0;
 }
 
-
-.shopping-cart{
-    padding: 1.2rem;
-    font-size: 1.2rem;
-    border-radius: 0.4rem;
-}
-
-ul.variations{
+.variations{
     display: flex;
     gap: 1.5rem;
 }
 
-ul > li.variation{
+.variation{
     list-style: none;
 }
 
-ul > li.variation > button{
+.variation > button{
     font-size: 1.4rem;
     color: black;
     font-weight: 300;
     
     padding: 0.8rem 1rem;
     background-color: transparent;
-    border: 2px solid rgba(168,168,168,.4);
+    border: 1px solid black;
 }
 
-ul > li.variation > button:hover{
-    background-color: #efefef;
+.variation button.active{
+    color: white;
+    background-color: #333;
 }
 
 .price{
