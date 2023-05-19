@@ -109,7 +109,39 @@ ul > li.variation > button:hover{
 
 .add-to-cart-btn > button{
     text-transform: uppercase;
-    padding: 1rem 2rem;
-    width: 30%;
-    
+    padding: 1rem 3rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 0;
+    border: 1px solid;
+    font-family: inherit;
+}
+
+.product-description{
+    margin-top: 10rem;
+}
+
+.product-description h2{
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--dark-gray);
+    margin-bottom: 2rem;
+}
+
+.product-description div{
+    margin: 3rem 0;
+}
+
+.product-description h3{
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.6rem;
+}
+
+.product-description p{
+    font-size: 1.4rem;
+    color: var(--dark-gray);
 }
