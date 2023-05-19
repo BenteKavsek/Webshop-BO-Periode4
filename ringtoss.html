@@ -65,17 +65,17 @@
         <div class="containercontent">
             <section class=" product product-variations">
                 <figure class="images">
-                    <img src="img/ringtoss-drankspel.webp" alt="">
+                    <img id="productIMG" src="img/ringtoss-drankspel.webp" alt="">
                 </figure>
                 <div class="choises">
                     <div class="titel">
                         <h1>Ringtoss - Drankspel</h1>
                     </div>
                     <ul class="variations">
-                        <li class="variation"><button class="active">Bruin</button></li>
-                        <li class="variation"><button>Wit</button></li>
-                        <li class="variation"><button>Zwart</button></li>
-                        <li class="variation"><button>Roze</button></li>
+                        <button onclick="changeVar('/img/ringtoss-drankspel.webp')" class="variation active">Bruin</button>
+                        <button onclick="changeVar('/img/test/blue.png')" class="variation">Blauw</button>
+                        <button onclick="changeVar('/img/test/black.jpeg')" class="variation">Zwart</button>
+                        <button onclick="changeVar('/img/test/pink.png')" class="variation">Roze</button>
                     </ul>
                     <p class="price">€19.95</p>
                     <div class="add-to-cart-btn">
@@ -198,7 +198,7 @@
         </div>
     </footer>
 </body>
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>
