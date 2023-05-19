@@ -245,6 +245,10 @@ button.button:hover{
     color: #333;
 }
 
+.product-big-text h3:hover{
+    text-decoration: underline 4px;
+}
+
 .product-big-text p{
     font-size: 1.4rem;
     color: var(--light-gray);
