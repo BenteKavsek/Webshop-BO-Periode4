@@ -30,8 +30,8 @@ for (let i = 0; arrowButtons.length; i++) {
 // INDIVIDUAL PRODUCT CHOISES
 let variations = document.querySelectorAll('.variation');
 variations.forEach(element => {
-    element.addEventListener("click", function(){
-        variations.forEach(btn=>btn.classList.remove("active"))
+    element.addEventListener("click", function () {
+        variations.forEach(btn => btn.classList.remove("active"))
         this.classList.add("active");
     })
 })
@@ -41,3 +41,40 @@ function changeVar(filename) {
     img.setAttribute("src", filename);
 }
 
+
+// fetch('./js/products.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     for (let i in data) {
+//       if (data.hasOwnProperty(i)) {
+
+//         console.log(data[i][0].name);
+//         console.log(data[i][0].price);
+//       }
+//     }
+// });
+
+fetch('./js/products.json')
+  .then(response => response.json())
+  .then(data => {
+    const productList = document.getElementsByClassName('product');
+    
+    for (let i = 0; i < 12; i++) {
+        
+        let productName = data.products[i].name;
+        let productPrice = data.products[i].price;
+        let productImg = data.products[i].img;
+          
+        
+        let listItem = productList[i].children;
+
+        let nameElement = listItem[1];
+        let priceElement = listItem[2];
+        let imgElement = [0];
+
+        nameElement.textContent = productName;
+        priceElement.textContent = productPrice;
+        imgElement.src = productImg;
+
+          }
+})

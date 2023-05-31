@@ -78,7 +78,7 @@ html{
     align-items: center;
 }
 
-form{
+.searchbar{
     display: flex;
     align-items: flex-end;
     height: 3.5rem;

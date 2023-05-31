@@ -1,0 +1,62 @@
+{
+    "products": [
+        {
+            "name": "Party or Naughty",
+            "price": "€19.99",
+            "img": "img/partyOrNaughty/PNdateNight.webp",
+            "variation-1": "Originl (NL)",
+            "variation-2": "Originl (ENG)",
+            "variation-3": "Date Night (NL)",
+            "variation-4": "Date Night (ENG)"
+        },
+        {
+            "name": "Beerpong",
+            "price": "€10.55",
+            "variation-1": "2x 6 cups",
+            "variation-2": "2x 10 cups",
+            "variation-3": "2x 15 cups"
+        },
+        {
+            "name": "Kaartspel",
+            "price": "€5.99",
+            "variation-1": "1 pakje",
+            "variation-2": "2 pakjes",
+            "variation-3": "3 pakjes"
+        },
+        {
+            "name": "Ringtoss",
+            "price": "€17.99 "
+        },
+        {
+            "name": "Do or Drink",
+            "price": "€9.99 "
+        },
+        {
+            "name": "Krokodillen spel",
+            "price": "€21.59 "
+        },
+        {
+            "name": "King zen",
+            "price": "€9.95 "
+        },
+        {
+            "name": "Go Hoe Or Go Home",
+            "price": "€24,95"
+        },
+        {
+            "name": "Drinking Bingo",
+            "price": "€14.95"
+        },
+        {
+            "name": "Drinkopoly",
+            "price": "€28,50"
+        },
+        {
+            "name": "You Laugh You Drink",
+            "price": "€34,95"
+        },
+        {
+            "name": "51 Most popular Drinking games",
+            "price": "€14,95"
+        }
+]}

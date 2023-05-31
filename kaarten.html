@@ -11,9 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="icon" href="img/link-logo.webp" type="image/icon type">
-    <title>Ringtoss page</title>
+    <title>Kaartspel</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 
                 <div class="header-right">
                     
-                    <form action="/action_page.php">
+                    <form class="searchbar" action="/action_page.php">
                         <input type="text" placeholder="Zoek product">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
@@ -76,19 +76,19 @@
         <div class="containercontent">
             <section class=" product product-variations">
                 <figure class="images">
-                    <img id="productIMG" src="img/Ringtoss/ringtoss-drankspel.webp" alt="">
+                    <img id="productIMG" src="img/kaarten.webp" alt="">
                 </figure>
                 <div class="choises">
                     <div class="titel">
-                        <h1>Ringtoss - Drankspel</h1>
+                        <h1>Kaarten - Speelkaarten</h1>
                     </div>
                     <ul class="variations">
-                        <button onclick="changeVar('/img/Ringtoss/ringtoss-drankspel.webp')" class="variation active">Bruin</button>
+                        <button onclick="changeVar('/img/kaarten.webp')" class="variation active">1 Pakje</button>
                         <button onclick="changeVar('/img/Ringtoss/blue.png')" class="variation">Blauw</button>
                         <button onclick="changeVar('/img/Ringtoss/black.jpeg')" class="variation">Zwart</button>
                         <button onclick="changeVar('/img/Ringtoss/pink.png')" class="variation">Roze</button>
                     </ul>
-                    <p class="price">€19.95</p>
+                    <p class="price">€5.95</p>
                     <div class="add-to-cart-btn">
                         <button><i class="fa-solid fa-cart-shopping"></i> Plaats in winkelwagen</button>
                     </div>
@@ -209,7 +209,7 @@
         </div>
     </footer>
 </body>
-<script src="main.js" defer></script>
+<script src="js/main.js" defer></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>
