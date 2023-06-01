@@ -11,9 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/games-page.css">
     <link rel="icon" href="img/link-logo.webp" type="image/icon type">
-    <title>Party or Naughty page</title>
+    <title>Spellen Overichtpagina</title>
 </head>
 
 <body>
@@ -26,12 +26,12 @@
                 <a href="index.html"><img src="img/logo.webp" alt="Logo van HappyHour webshop"></a>
 
                 <div class="header-right">
-                    
+
                     <form class="searchbar" action="/action_page.php">
                         <input type="text" placeholder="Zoek product">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-    
+
                 </div>
 
             </section>
@@ -67,66 +67,144 @@
                 </div>
 
             </section>
-            
+
         </div>
         <div class="line"></div>
     </header>
 
-    <main>
-        <div class="containercontent">
-            <section class=" product-indiviual product-variations">
-                <figure class="images">
-                    <img id="productIMG" src="img/partyOrNaugty/PNoriginal.webp" alt="">
-                </figure>
-                <div class="choises">
-                    <div class="titel">
-                        <h1>Party or Naughty - Kaartspel</h1>
-                    </div>
-                    <div class="variations">
-                        <button onclick="changeVar('/img/partyOrNaugty/PNoriginal.webp')" class="variation active">Original (NL)</button>
-                        <button onclick="changeVar('/img/partyOrNaugty/PNdateNight.webp')" class="variation">Date Night (NL)</button>
-                        <button onclick="changeVar('/img/partyOrNaugty/PNoriginalENG.webp')" class="variation">Original (ENG)</button>
-                        <button onclick="changeVar('/img/partyOrNaugty/PNdateNightENG.webp')" class="variation">Date Night (ENG)</button>
-                    </div>
-                    <p class="price">€19.99</p>
-                    <div class="add-to-cart-btn">
-                        <button><i class="fa-solid fa-cart-shopping"></i> Plaats in winkelwagen</button>
-                    </div>
-                </div>
-            </section>
-            <section class="product-description">
-                <h2>Details</h2>
-                <div>
-                    <h3>Titel</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempora aperiam cum id modi
-                        optio natus eos incidunt
-                        sed tempore rem necessitatibus, non praesentium blanditiis, omnis quas ut deserunt quos.
-                        Ducimus facere provident accusantium, dignissimos suscipit mollitia ipsum a saepe consequatur
-                        facilis fugit voluptatibus,
-                        pariatur dolorum quod ex dolor corrupti, modi tempore nobis ab necessitatibus! Ab sed aut facere
-                        numquam?
-                        Quod tempore, commodi delectus voluptatibus quo nam culpa eum blanditiis aliquam earum
-                        praesentium, fugit assumenda quia.
-                        Sapiente consequatur quae fuga perspiciatis accusantium corrupti vero mollitia ab. Distinctio,
-                        ad. Debitis, reiciendis.</p>
-                </div>
-                <div>
-                    <h3>Titel</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempora aperiam cum id modi
-                        optio natus eos incidunt
-                        sed tempore rem necessitatibus, non praesentium blanditiis, omnis quas ut deserunt quos.
-                        Ducimus facere provident accusantium, dignissimos suscipit mollitia ipsum a saepe consequatur
-                        facilis fugit voluptatibus,
-                        pariatur dolorum quod ex dolor corrupti, modi tempore nobis ab necessitatibus! Ab sed aut facere
-                        numquam?
-                        Quod tempore, commodi delectus voluptatibus quo nam culpa eum blanditiis aliquam earum
-                        praesentium, fugit assumenda quia.
-                        Sapiente consequatur quae fuga perspiciatis accusantium corrupti vero mollitia ab. Distinctio,
-                        ad. Debitis, reiciendis.</p>
-                </div>
-                <button>add to cart</button>
-            </section>
 
+    <main>
+        <div class="containercontent product-page">
+            <sidebar class="categorys">
+
+                <h2 class="page-title">Categorieën</h2>
+
+                <form class="category" action=" ">
+                    <label class="category-title" for=" ">Aantal spelers</label>
+
+                    <div class="option">
+                        <input type="checkbox" id="2p" name="2p" value="2p">
+                        <label for="2p">2 Personen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="4p" name="4p" value="4p">
+                        <label for="4p">4 Personen</label>`
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="4p+" name="4p+" value="4p+">
+                        <label for="4p+">4 of meer personen</label>
+                    </div>
+                </form>
+
+                <form class="category" action=" ">
+                    <label class="category-title" for=" ">Soort spel</label>
+
+                    <div class="option">
+                        <input type="checkbox" id="kaartspel" name="kaartspel" value="kaartspel">
+                        <label for="2p">Kaartspel</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="bordspel" name="bordspel" value="bordspel">
+                        <label for="4p">Bordspel</label>`
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="overig" name="overig" value="overig">
+                        <label for="4p+">Overig</label>
+                    </div>
+                </form>
+
+                <form class="category" action=" ">
+                    <label class="category-title" for=" ">Taal</label>
+
+                    <div class="option">
+                        <input type="checkbox" id="nederlands" name="nederlands" value="nederlands">
+                        <label for="2p">Nederlands</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="engels" name="engels" value="engels">
+                        <label for="4p">Engels</label>`
+                    </div>
+   
+                </form>
+
+            </sidebar>
+            <section class="products">
+                <ul class="products-ul">
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product2">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product3">
+                        <img class="product-img" src="/img/partyOrNaugty/PNoriginal.webp" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product4">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product5">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product6">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product7">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product8">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product9">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product10">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product11">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product product12">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                </ul>
+            </section>
         </div>
     </main>
 
@@ -208,8 +286,9 @@
             </section>
         </div>
     </footer>
+
 </body>
-<script src="js/indiv-product.js" defer></script>
+<script src="js/spel-overzicht.js"></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>

@@ -43,7 +43,6 @@ html{
 
 .HeroSection-content{
     display: flex;
-    align-items: center;
     position: relative;
     gap: 2rem;
 }
@@ -51,6 +50,7 @@ html{
 .HeroSection-content img{
     width: 45%;
     margin: 10rem 0;
+    object-fit: contain;
 }
 
 .reclame{
@@ -133,15 +133,15 @@ html{
 }
 
 .reclame-text > h2{
-    font-size: 4.2rem;
+    font-size: 420%;
     font-weight: 500;
     transform: rotate(-5deg);
     margin-left: 4rem;
 }
 
 .reclame-text > h3{
-    font-size: 5.5rem;
-    font-weight: 650;
+    font-size: 550%;
+    font-weight: 600;
     transform: rotate(-10deg);
 }
 
@@ -462,12 +462,10 @@ button.button:hover{
     }
 }
 
-@media screen and (max-width: 50rem){
-    .arrow{
-        display: none;
-    }
+@media screen and (min-width: 160rem){
 
-    .reviews{
-        width: 100%;
+    .HeroSection-content{
+        display: flex;
+        flex-direction: column;
     }
 }
