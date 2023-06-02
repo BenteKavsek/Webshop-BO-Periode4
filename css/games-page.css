@@ -16,6 +16,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 4rem;
+    width: 32%;
 }
 
 .page-title{
@@ -59,7 +60,7 @@
 }
 
 .option input:checked{
-    background-color: var(--pink-hightlights);
+    background-color: #949494;
 }
 
 .product-page{

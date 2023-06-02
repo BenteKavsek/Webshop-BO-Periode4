@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/games-page.css">
     <link rel="icon" href="img/link-logo.webp" type="image/icon type">
-    <title>Spellen Overichtpagina</title>
+    <title>Drank Pagina</title>
 </head>
 
 <body>
@@ -77,52 +77,100 @@
         <div class="containercontent product-page">
             <sidebar class="categorys">
 
-                <h2 class="page-title">Categorieën</h2>
+                <h2 class="page-title">Filters</h2>
 
                 <form class="category" action=" ">
-                    <label class="category-title" for=" ">Aantal spelers</label>
+                    <label class="category-title" for=" ">Soort</label>
 
                     <div class="option">
-                        <input type="checkbox" id="2p" name="2p" value="2p">
-                        <label for="2p">2 Personen</label>
+                        <input id="checkbox-bitter" type="checkbox" class="filter">
+                        <label for="4p+">Bitter</label>
+                    </div>
+
+                    <div class="option">
+                        <input id="checkbox-cocktails" type="checkbox" class="filter">
+                        <label for="4p+">Cocktails</label>
+                    </div>
+
+                    <div class="option">
+                        <input id="checkbox-mixlikeur" type="checkbox" class="filter">
+                        <label for="4p+">Mixlikeur</label>
+                    </div>
+
+                    <div class="option">
+                        <input id="checkbox-tequila" type="checkbox" class="filter">
+                        <label for="4p">Tequila</label>`
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="4p" name="4p" value="4p">
-                        <label for="4p">4 Personen</label>`
+                        <input id="checkbox-wodka" type="checkbox" class="filter">
+                        <label for="2p">Wodka</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="4p+" name="4p+" value="4p+">
-                        <label for="4p+">4 of meer personen</label>
+                        <input id="checkbox-flavoured-Wodka" type="checkbox" class="filter">
+                        <label for="2p">Flavoured Wodka</label>
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-Rum" type="checkbox" class="filter">
+                        <label for="4p+">Rum</label>
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-flavoured-Rum" type="checkbox" class="filter">
+                        <label for="4p+">Flavoured Rum</label>
+                    </div>
+                    
+                </form>
+
+                <form class="category" action=" ">
+                    <label class="category-title" for=" ">Hoeveelheid</label>
+
+                    <div class="option">
+                        <input id="checkbox-150CL" type="checkbox" class="filter">
+                        <label for="2p">150 CL</label>
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-100CL" type="checkbox" class="filter">
+                        <label for="4p">100 CL</label>`
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-70CL" type="checkbox" class="filter">
+                        <label for="4p+">70 CL</label>
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-50CL" type="checkbox" class="filter">
+                        <label for="4p+">50 CL</label>
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-35CL" type="checkbox" class="filter">
+                        <label for="4p+">35 CL</label>
                     </div>
                 </form>
 
                 <form class="category" action=" ">
-                    <label class="category-title" for=" ">Soort spel</label>
+                    <label class="category-title" for=" ">Merk</label>
 
                     <div class="option">
-                        <input type="checkbox" id="kaartspel" name="kaartspel" value="kaartspel">
-                        <label for="2p">Kaartspel</label>
+                        <input id="checkbox-absolut" type="checkbox" class="filter">
+                        <label for="4p">Absolut</label>`
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="bordspel" name="bordspel" value="bordspel">
-                        <label for="4p">Bordspel</label>`
+                        <input id="checkbox-bacardi" type="checkbox" class="filter">
+                        <label for="2p">Bacardi</label>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="overig" name="overig" value="overig">
-                        <label for="4p+">Overig</label>
-                    </div>
-                </form>
-
-                <form class="category" action=" ">
-                    <label class="category-title" for=" ">Taal</label>
-
-                    <div class="option">
-                        <input type="checkbox" id="nederlands" name="nederlands" value="nederlands">
-                        <label for="2p">Nederlands</label>
+                        <input id="checkbox-coppaCocktails" type="checkbox" class="filter">
+                        <label for="4p">Coppa Cocktails</label>`
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="engels" name="engels" value="engels">
-                        <label for="4p">Engels</label>`
+                        <input id="checkbox-malibu" type="checkbox" class="filter">
+                        <label for="4p">Malibu</label>`
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-sierra" type="checkbox" class="filter">
+                        <label for="4p">Sierra</label>`
+                    </div>
+                    <div class="option">
+                        <input id="checkbox-smirnhoff" type="checkbox" class="filter">
+                        <label for="4p">Smirnhoff</label>`
                     </div>
    
                 </form>
@@ -131,73 +179,109 @@
             <section class="products">
                 <ul class="products-ul">
 
-                    <li class="product">
+                    <li class="product"
+                    data-soort = "Flavoured-Rum"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Bacardi">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product2">
+                    <li class="product"
+                    data-soort = "Rum"
+                    data-hoeveelheid = "150CL"
+                    data-merk = "Bacardi">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product3">
+                    <li class="product"
+                    data-soort = "Tequila"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Sierra">
+                        <img class="product-img "src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <p class="product-price">€prijs enzo</p>
+                    </li>
+
+                    <li class="product"
+                    data-soort = "Bitter"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Jägermeister">
                         <img class="product-img" src="img/partyOrNaughty/PNoriginal.webp" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product4">
+                    <li class="product"
+                    data-soort = "Mixlikeur"
+                    data-hoeveelheid = "100CL"
+                    data-merk = "Malibu">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product5">
+                    <li class="product"
+                    data-soort = "Flavoured-Rum"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Bacardi">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product6">
+                    <li class="product"
+                    data-soort = "Flavoured-Wodka"
+                    data-hoeveelheid = "50CL"
+                    data-merk = "Absolut">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product7">
+                    <li class="product"
+                    data-soort = "Wodka"
+                    data-hoeveelheid = "50CL"
+                    data-merk = "Smirnhoff">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product8">
+                    <li class="product"
+                    data-soort = "Tequila"
+                    data-hoeveelheid = "100CL"
+                    data-merk = "Sierra">
                         <img class="product-img "src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product9">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product product10">
+                    <li class="product"
+                    data-soort = "Cocktails"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Coppa-Cocktails">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product11">
+                    <li class="product"
+                    data-soort = "Cocktails"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Coppa-Cocktails">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
                     </li>
 
-                    <li class="product product12">
+                    <li class="product"
+                    data-soort = "Cocktails"
+                    data-hoeveelheid = "70CL"
+                    data-merk = "Coppa-Cocktails">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
                         <p class="product-price">€prijs enzo</p>
@@ -288,7 +372,7 @@
     </footer>
 
 </body>
-<script src="js/main.js"></script>
+<script src="js/drank-overzicht.js"></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>
