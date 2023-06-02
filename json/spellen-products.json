@@ -1,52 +1,52 @@
 {
     "products": [
         {
+            "img": " ",
             "name": "Party or Naughty",
-            "price": "€19.99",
-            "img": "/img/partyOrNaughty/PNoriginal.webp"
+            "price": 19.99
         },
         {
             "name": "Beerpong",
-            "price": "€10.55"
+            "price": 10.55
         },
         {
             "name": "Kaartspel",
-            "price": "€5.99"
+            "price": 5.99
         },
         {
             "name": "Ringtoss",
-            "price": "€17.99 "
+            "price": 17.99
         },
         {
             "name": "Do or Drink",
-            "price": "€9.99 "
+            "price": 9.99
         },
         {
             "name": "Krokodillen spel",
-            "price": "€21.59 "
+            "price": 21.59
         },
         {
             "name": "King zen",
-            "price": "€9.95 "
+            "price": 9.95
         },
         {
             "name": "Go Hoe Or Go Home",
-            "price": "€24,95"
+            "price": 24.95
         },
         {
             "name": "Drinking Bingo",
-            "price": "€14.95"
+            "price": 14.95
         },
         {
             "name": "Drinkopoly",
-            "price": "€28,50"
+            "price": 28.50
         },
         {
             "name": "You Laugh You Drink",
-            "price": "€34,95"
+            "price": 34.95
         },
         {
             "name": "51 Most popular Drinking games",
-            "price": "€14,95"
+            "price": 14.95
         }
 ]}

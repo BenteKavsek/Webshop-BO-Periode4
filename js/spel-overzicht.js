@@ -17,7 +17,23 @@ fetch('./json/spellen-products.json')
         let imgElement = listItem[0];
 
         nameElement.innerText = productName;
-        priceElement.innerText = productPrice;
+        priceElement.innerText = "€" + productPrice;
         imgElement.src= productImg;
+
+      }
+    })
+    
+    
+    function prijsFilter(minPrijs, maxPrijs) {
+      var filteredItems = [];
+    
+      for (var i = 0; i < data.products.price; i++) {
+        var product = data.products[i];
+    
+        if (product.price >= minPrijs && product.price <= maxPrijs) {
+          filteredItems.push(product);
         }
-})
+      }
+    
+      console.log(filteredItems);
+    }

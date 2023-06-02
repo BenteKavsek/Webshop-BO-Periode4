@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "img": "//img/drank-assortiment/bacardi-mango.webp",
+            "img": "/img/drank-assortiment/",
             "name": "Bacardi Mango",
             "price": "€19.98"
         },

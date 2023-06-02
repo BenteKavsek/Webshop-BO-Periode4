@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .option label{
@@ -51,16 +52,28 @@
 }
 
 .option input{
+    appearance: none;
+    -webkit-appearance: none;
     width: 1.3rem;
     height: 1.3rem;
-    -webkit-appearance: none;
-    appearance: none;
     border: 1px solid black;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option input:after{
+    content: ' \2666';
+    display: none;
 }
 
 .option input:checked{
-    background-color: #949494;
+    background-color: var(--pink-light);
+}
+
+.option input:checked::after{
+    display: block;
 }
 
 .product-page{
@@ -103,4 +116,45 @@
     font-size: 1.6rem;
     color: #949494;
     font-weight: 400;
+}
+
+
+
+.dropbtn {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--pink-light);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    font-size: 1.4rem;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #ececec;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
