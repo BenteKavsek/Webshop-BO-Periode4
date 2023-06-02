@@ -1,5 +1,4 @@
 // NAAM PRIJS EN PLAATJE LATEN ZIEN
-
 fetch('./json/drank-products.json')
   .then(response => response.json())
   .then(data => {
@@ -24,6 +23,7 @@ fetch('./json/drank-products.json')
         }
 })
 
+// CHECKBOX FILTERS
 const filters = document.querySelectorAll('.filter');
 const products = document.querySelectorAll('.product');
 

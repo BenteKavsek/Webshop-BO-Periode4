@@ -24,16 +24,24 @@ fetch('./json/spellen-products.json')
     })
     
     
-    function prijsFilter(minPrijs, maxPrijs) {
-      var filteredItems = [];
     
-      for (var i = 0; i < data.products.price; i++) {
-        var product = data.products[i];
-    
-        if (product.price >= minPrijs && product.price <= maxPrijs) {
-          filteredItems.push(product);
-        }
-      }
-    
-      console.log(filteredItems);
-    }
+function prijsFilter(minPrice, maxPrice){
+    fetch('./json/spellen-products.json')
+    .then(response => response.json())
+    .then(data => {
+        var filteredItems = [];
+  
+        for (let i = 0; i < 12; i++) {
+  
+        if (data.products[i].price >= minPrice && data.products[i].price <= maxPrice) {
+          filteredItems.push(filteredItems);
+        }}
+        console.log(filteredItems);
+})};
+
+// STAPPENPLAN PRIJSFILTER
+// 1. haal alle prijzen uit json
+// 2. krijg de min en max prijs uit de filter van HTML
+// 3. vergelijk de prijzen uit json met de min en max prijzen van HTML
+// 4. maak een if else voor welke display flex en dsiplay none hebben
+// 5. zorg dat hij elke keer refereshed als er iets in die filter word aangeklikt 
