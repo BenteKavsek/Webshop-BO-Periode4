@@ -9,7 +9,6 @@ fetch('./json/drank-products.json')
         let productName = data.products[i].name;
         let productPrice = data.products[i].price;
         let productImg = data.products[i].img;
-          
         
         let listItem = productList[i].children;
 
@@ -18,10 +17,10 @@ fetch('./json/drank-products.json')
         let imgElement = listItem[0];
 
         nameElement.innerText = productName;
-        priceElement.innerText = productPrice;
+        priceElement.innerText = "€" + productPrice;
         imgElement.src = productImg;
         }
-})
+    })
 
 // CHECKBOX FILTERS
 const filters = document.querySelectorAll('.filter');

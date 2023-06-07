@@ -1,51 +1,62 @@
 {
     "products": [
         {
-            "img": " ",
+            "img": "img/spel-assortiment/PNoriginal.webp",
             "name": "Party or Naughty",
             "price": 19.99
         },
         {
+            "img": "img/spel-assortiment/beerpong.webp",
             "name": "Beerpong",
             "price": 10.55
         },
         {
+            "img": "img/spel-assortiment/kaarten.webp",
             "name": "Kaartspel",
             "price": 5.99
         },
         {
-            "name": "Ringtoss",
-            "price": 17.99
+            "img": "img/spel-assortiment/darts.webp",
+            "name": "Darts",
+            "price": 16.99
         },
         {
+            "img": "img/spel-assortiment/do-or-drink.webp",
             "name": "Do or Drink",
             "price": 9.99
         },
         {
+            "img": "img/spel-assortiment/krokodillen.webp",
             "name": "Krokodillen spel",
             "price": 21.59
         },
         {
-            "name": "King zen",
+            "img": "img/spel-assortiment/kingsen.webp",
+            "name": "Kingsen",
             "price": 9.95
         },
         {
+            "img": "img/spel-assortiment/go-hoe-or-go-home.webp",
             "name": "Go Hoe Or Go Home",
             "price": 24.95
         },
         {
+            "img": "img/spel-assortiment/drinking-bingo.webp",
             "name": "Drinking Bingo",
             "price": 14.95
         },
         {
+            "img": "img/spel-assortiment/drinkopoly.webp",
             "name": "Drinkopoly",
             "price": 28.50
         },
         {
+            "img": "img/spel-assortiment/you-laugh-you-drink.webp",
             "name": "You Laugh You Drink",
             "price": 34.95
         },
         {
+            "img": "img/spel-assortiment/51-most-popular.webp",
             "name": "51 Most popular Drinking games",
             "price": 14.95
         }

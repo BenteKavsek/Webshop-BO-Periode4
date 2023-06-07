@@ -22,8 +22,9 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
-.main{
+main{
     height: 100%;
+    margin-top: 25rem;
 }
 
 .product-individual{
@@ -44,9 +45,10 @@ figure.images{
 }
 
 .product-variations img{
-    width: 100%;
-    height: 100%;
+    width: 35rem;
+    height: 35rem;
     padding: 4rem;
+    object-fit: contain;
 }
 
 .choises{

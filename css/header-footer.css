@@ -35,6 +35,14 @@ html{
     padding: 5rem 0;
 }
 
+header{
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+}
+
 .header-top{
     height: 4rem;
     background-color: var(--pink-light);

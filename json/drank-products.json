@@ -1,64 +1,64 @@
 {
     "products": [
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/bacardi-mango.webp",
             "name": "Bacardi Mango",
-            "price": "€19.98"
+            "price": 19.98
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/bacardi-carta-blanca.webp",
             "name": "Bacardi Carta Blanca",
-            "price": "€30.49"
+            "price": 30.49
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/sierra-blanco.webp",
             "name": "Sierra Blanco",
-            "price": "€20.99"
+            "price": 20.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/jägermeister.webp",
             "name": "Jägermeister",
-            "price": "€17.98"
+            "price": 17.98
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/malibu-coconut.webp",
             "name": "Malibu Coconut",
-            "price": "€21.99"
+            "price": 21.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/bacardi-tropical.webp",
             "name": "Bacardi Tropical",
-            "price": "€19.98"
+            "price": 19.98
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/absolut-mango.webp",
             "name": "Absolut Mango",
-            "price": "€14.49"
+            "price": 14.49
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/smirnhoff.webp",
             "name": "Smirnhoff",
-            "price": "€13.99"
+            "price": 13.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/sierra-reposado.webp",
             "name": "Sierra Reposado",
-            "price": "€20.99"
+            "price": 20.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/coppa-espresso-martini.webp",
             "name": "Coppa Espresso Martini",
-            "price": "€14.99"
+            "price": 14.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/coppa-long-island-ice-tea.webp",
             "name": "Coppa Long Island Icetea",
-            "price": "€13.99"
+            "price": 13.99
         },
         {
-            "img": "/img/drank-assortiment/",
+            "img": "img/drank-assortiment/coppa-mojito.webp",
             "name": "Coppa Mojito",
-            "price": "€13.99"
+            "price": 13.99
         }
     
 ]}
