@@ -223,7 +223,7 @@ button.button:hover{
 }
 
 .product-big img{
-    width: 60rem;
+    width: 50%;
     object-fit: contain;
 }
 
@@ -240,7 +240,7 @@ button.button:hover{
     font-size: 2.3rem;
     background-color: #ECECEC;
     border-radius: 2rem;
-    width: 18%;
+    border: 2px solid gray;
 }
 
 .product-big-text h3{
@@ -466,10 +466,44 @@ button.button:hover{
     }
 }
 
-@media screen and (min-width: 160rem){
-
-    .HeroSection-content{
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width: 1300px) {
+    .HeroSection-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
     }
+
+    .HeroSection-content img {
+        width: 100%;
+    }
+
+    .star{
+        top: 150px;
+        left: 250px;
+    }
+
+    .reclame-text{
+        margin: 0;
+    }
+
+    .reclame-text h2, .reclame-text h3{
+        text-align: center;
+    }
+
+    .slogan{
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    button.button{
+        font-size: 2rem;
+        padding: 1.5rem 2.5rem;
+        width: 100%;
+    }
+
+    .promotion div button{
+        width: auto;
+    }
+
 }

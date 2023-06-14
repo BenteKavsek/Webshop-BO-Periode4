@@ -19,7 +19,7 @@ main{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 4rem;
-    width: 32%;
+    width: 47%;
 }
 
 .page-title{
@@ -85,10 +85,16 @@ main{
     gap: 5rem;
 }
 
+.products h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .products-ul{
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
+    justify-content: flex-start;
 }
 
 .product{

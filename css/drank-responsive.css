@@ -1,0 +1,35 @@
+.option{
+    display: none;
+    margin-left: 1.4rem;
+    animation: dropdown .3s linear  forwards;
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(4px);
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .product-page{
+        flex-direction: column;
+    }
+
+    .categorys{
+        flex-direction: row;
+    }
+
+    .category-title{
+        width: 13rem;
+        text-align: center;
+    }
+}

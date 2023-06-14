@@ -11,7 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/games-page.css">
+    <link rel="stylesheet" href="css/product-overzicht.css">
+    <link rel="stylesheet" href="css/drank-responsive.css">
     <link rel="icon" href="img/link-logo.webp" type="image/icon type">
     <title>Drank Pagina</title>
 </head>
@@ -51,20 +52,20 @@
                         <a href="sterke-drank.html">Sterke drank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Mixdrank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Extra's</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                 </nav>
 
-                <div class="cart-btn">
+                <a class="cart-btn" href="winkelwagen.html">
                     <i class="fa-solid fa-bag-shopping cart"></i>
                     <p>€0,00</p>
-                </div>
+                </a>
 
             </section>
 
@@ -77,10 +78,10 @@
         <div class="containercontent product-page">
             <sidebar class="categorys">
 
-                <h2 class="page-title">Filters</h2>
+                <h2 class="page-title">Filters:</h2>
 
                 <form class="category" action=" ">
-                    <label class="category-title" for=" ">Soort</label>
+                    <label class="category-title" id="category-soort" for=" " onclick="showFilters_soort()">Soort <i class="fa-solid fa-chevron-down"></i></label>
 
                     <div class="option">
                         <input id="Bitter" type="checkbox" class="filter">
@@ -121,7 +122,7 @@
                 </form>
 
                 <form class="category" action=" ">
-                    <label class="category-title" for=" ">Hoeveelheid</label>
+                    <label class="category-title" for=" " id="category-hoeveelheid" onclick="showFilters_hoeveelheid()">Hoeveelheid <i class="fa-solid fa-chevron-down"></i></label>
 
                     <div class="option">
                         <input class="filter" id="150CL" type="checkbox" >
@@ -146,7 +147,7 @@
                 </form>
 
                 <form class="category" action=" ">
-                    <label class="category-title" for=" ">Merk</label>
+                    <label class="category-title" for=" " id="category-merk" onclick="showFilters_merk()">Merk <i class="fa-solid fa-chevron-down"></i></label>
 
                     <div class="option">
                         <input id="Absolut" type="checkbox" class="filter">
@@ -177,6 +178,11 @@
 
             </sidebar>
             <section class="products">
+                <div>
+                    <h4>Actieve filters: </h4>
+                    <p class="active-filters">Geen actieve filters</p>
+                </div>
+                
                 <ul class="products-ul">
 
                     <li class="product" data-soort="Flavoured-Rum" data-hoeveelheid="70CL" data-merk="Bacardi">

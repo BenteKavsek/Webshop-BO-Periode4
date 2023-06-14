@@ -1,0 +1,41 @@
+.filter a{
+    text-decoration: none;
+}
+
+.filter a:hover{
+    text-decoration: underline;
+}
+
+.filter a:focus{
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1300px) {
+    .product-page{
+        flex-direction: column;
+    }
+
+    .categorys{
+        width: 100%;
+        gap: 5rem;
+    }
+
+    .page-title{
+        font-size: 2rem;
+    }
+
+    .filter a{
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 0.4rem;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    .dropdown-content{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+}

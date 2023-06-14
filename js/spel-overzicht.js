@@ -21,6 +21,11 @@ fetch('./json/spellen-products.json')
         imgElement.src = productImg;
         }
       })
+
+
+for (let i = 0; i < arrowButtons.length; i++){
+
+}
       
       // STAPPENPLAN PRIJSFILTER
       // 1. haal alle prijzen uit json

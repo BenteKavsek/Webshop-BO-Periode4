@@ -129,19 +129,25 @@ form button{
     gap: 0.5rem;
 }
 
+
 .header-nav nav a{
     text-decoration: none;
     color: black;
-
+    
     display: flex;
-
+    
     font-size: 1.4rem;
     font-weight: 400;
-
+    
     text-transform: uppercase;
     align-items: center;
-
+    
     line-height: 5rem;
+}
+
+.header-nav div.unavailable a{
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
 }
 
 .header-nav nav a:hover{
@@ -258,4 +264,12 @@ footer > div{
     color: var(--gray);
     font-weight: 400;
     gap: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .header-nav div a, .header-nav a{
+        font-size: 1.8rem;
+    }
+
 }
