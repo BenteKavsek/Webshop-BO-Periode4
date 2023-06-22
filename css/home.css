@@ -467,6 +467,23 @@ button.button:hover{
 }
 
 @media only screen and (max-width: 1300px) {
+    body{
+        width: 100vw;
+    }
+
+    main{
+        margin: 0;
+    }
+    
+    .product-big{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-big img{
+        width: 80%;
+        margin-bottom: 10%;
+    }
     .HeroSection-content {
       display: flex;
       flex-direction: column;
@@ -478,8 +495,8 @@ button.button:hover{
     }
 
     .star{
-        top: 150px;
-        left: 250px;
+        top: 10%;
+        left: 15%;
     }
 
     .reclame-text{
@@ -506,4 +523,29 @@ button.button:hover{
         width: auto;
     }
 
+}
+
+@media only screen and (max-width: 750px){
+    .header-nav div a, .header-nav i{
+        font-size: 100% ;
+    }
+
+    .star{
+        top: 5%;
+        left: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px){
+    .reclame-text h2{
+        font-size: 2.6rem;
+        margin: 0;
+    }
+
+    .reclame-text h3{
+        font-size: 3rem;
+        margin: 0;
+    }
 }

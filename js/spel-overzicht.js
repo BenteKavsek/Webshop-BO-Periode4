@@ -38,12 +38,31 @@ for (let i = 0; i < arrowButtons.length; i++){
           fetch('./json/spellen-products.json')
           .then(response => response.json())
           .then(data => {
-              var filteredItems = [];
-              
-              for (let i = 0; i < 12; i++) {
+
+            const products = document.getElementsByClassName("product");
+            
+            for (let i = 0; i < products.length; i++) {
                 
                 if (data.products[i].price >= minPrice && data.products[i].price <= maxPrice) {
-                filteredItems.push(filteredItems);
+                products[i].style.display = "flex";
+              }
+              else{
+                products[i].style.display = "none";
               }}
-              console.log(filteredItems);
+
       })};
+
+
+function filter_spel(clickedElement) {
+  const a = document.getElementsByClassName('filter');
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === clickedElement) {
+      a[i].classList.add('active');
+    } else {
+      a[i].classList.remove('active');
+    }
+  }
+}
+
+
+  

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #212121;
+    --dark-gray: #333;
+    --light-gray: #9b9b9b;;
+    --pink: #DBB7C0;
+    --pink-hightlights: #e09c8c;
+    --pink-light: #f4e4dc;
+    --salmon: #e2c7b5;
+}
+
+html{
+    font-size: 65.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    height: 100rem;
+    margin-top: 25rem;
+}
+
+.containercontent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.order-path{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.order-path i{
+    font-size: 1.4rem;
+}
+
+.order-path div{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 0.3rem;
+}
+
+.order-path div i{
+    color: pink;
+}
+
+.order-path div a{
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.order-path div a.active{
+    font-weight: 600;
+    text-decoration: underline;
+}

@@ -81,10 +81,11 @@
                 <h2 class="page-title">Filter op prijs</h2>
 
                 <div class="dropdown">
-                    <div class="dropdown-content">
-                        <button onclick="prijsFilter(3.50, 14.99)"   class="filter"><a href="">€3.50 - €14.99</a></button>
-                        <button onclick="prijsFilter(15.00, 34.99)" class="filter"><a href="">€15.00 - €34.99</a></button>
-                        <button onclick="prijsFilter(35.00, 59.99)" class="filter"><a href="">€35.00 - €59.99</a></button>
+                    <div class="dropdown-content_spellen">
+                        <a onclick="prijsFilter(3.50, 59.99); filter_spel(this)" class="filter active">Alle prijzen</a>
+                        <a onclick="prijsFilter(3.50, 14.99); filter_spel(this)" class="filter">€3.50 - €14.99</a>
+                        <a onclick="prijsFilter(15.00, 34.99); filter_spel(this)" class="filter">€15.00 - €34.99</a>
+                        <a onclick="prijsFilter(35.00, 59.99); filter_spel(this)" class="filter">€35.00 - €59.99</a>
                     </div>
                 </div>
 
@@ -95,73 +96,144 @@
                     <li class="product">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
                     </li>
 
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img" src="" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
-                        <img class="product-img "src="#" alt="">
-                        <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
-                    </li>
-
-                    <li class="product ">
+                    <li class="product">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
                     </li>
 
-                    <li class="product ">
+                    <li class="product">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
                     </li>
 
-                    <li class="product ">
+                    <li class="product">
                         <img class="product-img" src="#" alt="">
                         <h3 class="product-title">Product Naam</h3>
-                        <p class="product-price">€prijs enzo</p>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <img class="product-img" src="#" alt="">
+                        <h3 class="product-title">Product Naam</h3>
+                        <div class="price">
+                            <p class="product-price">€prijs enzo</p>
+                        </div>
+                        <div class="addToCart">
+                            <p class="product-addToCart" >Add to cart</p>
+                        </div>
                     </li>
 
                 </ul>
@@ -249,7 +321,7 @@
     </footer>
 
 </body>
-<script src="js/spel-overzicht.js"></script>
+<script src="js/spel-overzicht.js" defer></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>

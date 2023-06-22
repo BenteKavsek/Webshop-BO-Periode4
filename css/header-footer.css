@@ -150,6 +150,10 @@ form button{
     font-style: italic;
 }
 
+.header-nav div.unavailable a:hover{
+    text-decoration: line-through;
+}
+
 .header-nav nav a:hover{
     text-decoration: underline;
 }
@@ -158,7 +162,6 @@ form button{
     font-size: 1rem;
     color: var(--light-gray);
 }
-
 
 /* FOOTER */
 footer{
@@ -266,10 +269,39 @@ footer > div{
     gap: 1rem;
 }
 
+
 @media only screen and (max-width: 1300px) {
 
     .header-nav div a, .header-nav a{
         font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 1110px){
+    .footer-lists{
+        flex-direction: column;
+    }
+
+    .header-nav nav a{
+        font-size: 100%;
+    }
+    
+    .cart-btn p{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    
+}
+
+
+
+@media only screen and (max-width: 450px){
+
+    .header-nav nav a{
+        font-size: 1rem;
     }
 
 }

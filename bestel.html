@@ -11,15 +11,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,600;1,700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/bestel.css">
     <link rel="icon" href="img/link-logo.webp" type="image/icon type">
-    <script src="cart.js" defer></script>
-    <title>Winkelwagen</title>
+    <title>HappyHour webshop</title>
 </head>
 
 <body>
-
-
     <header>
         <section class="header-top"></section>
 
@@ -30,7 +27,7 @@
 
                 <div class="header-right">
                     
-                    <form action="/action_page.php">
+                    <form class="searchbar" action="/action_page.php">
                         <input type="text" placeholder="Zoek product">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
@@ -54,117 +51,55 @@
                         <a href="sterke-drank.html">Sterke drank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Mixdrank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Extra's</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                 </nav>
 
-                <div class="cart-btn">
+                <a class="cart-btn" href="winkelwagen.html">
                     <i class="fa-solid fa-bag-shopping cart"></i>
                     <p>€0,00</p>
-                </div>
+                </a>
 
             </section>
             
         </div>
         <div class="line"></div>
-        <section class="cart-header">
-            <h1>Winkelwagen</h1>
-            <div class="cart-header-nav">
-                <i class="fa-solid fa-house"></i>
-                <a href="index.html"> Home</a>
-                <p>/</p>
-                <p>Winkelwagen</p>
-            </div>
-
-        </section>
     </header>
 
 
     <main>
         <div class="containercontent">
-            <section class="titles">
-                <h2>Producten</h2>
-                <h2>Prijs</h2>
-                <h2>Aantal</h2>
-                <h2>Totaal</h2>
-            
+            <section class="order-path">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="winkelwagen.html">Winkelwagen</a>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+                <div>
+                    <i class="fa-solid fa-address-book"></i>
+                    <a href=" " class="active">Gegevens</a>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                    <a href=" ">Verzending</a>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+                <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <a href=" ">Winkelwagen</a>
+                </div>
             </section>
-            <section class="items">
-                <article class="item">
-                    <img src="img/drank-assortiment/bacardi-mango.webp" alt="">
-                    <p class="name">Bacardi Mango</p>
-                    <p class="price">€19.98</p>
-                    <p class="amount">1</p>
-                    <p class="total-price">€19.98</p>
-                </article>
-                <article class="item">
-                    <img src="img/drank-assortiment/malibu-coconut.webp" alt="">
-                    <p class="name">Malibu Coconut</p>
-                    <p class="price">€21.99</p>
-                    <p class="amount">2</p>
-                    <p class="total-price">€43.98</p>
-                </article>
-                <article class="item">
-                    <img src="img/spel-assortiment/do-or-drink.webp" alt="">
-                    <p class="name">Do or Drink (drankspel)</p>
-                    <p class="price">€9.99</p>
-                    <p class="amount">1</p>
-                    <p class="total-price">€9.99</p>
-                </article>
-                <article class="item">
-                    <img src="img/spel-assortiment/beerpong.webp" alt="">
-                    <p class="name">Beerpong</p>
-                    <p class="price">€10.55</p>
-                    <p class="amount">1</p>
-                    <p class="total-price">€10.55</p>
-                </article>
-            </section>
-            <section class="cart-buttons">
-                <button class="btn-1">Winkelwagen wissen</button>
-                <button class="btn-2">Update winkelwagen</button>
-            </section>
-            <section class="total-section">
-                <section class="left">
-                    <h2>Vandaag besteld binnen 2 werkdagen in huis.</h2>
-                    <textarea name="text" id="" cols="20" rows="10" placeholder="Bezorg instructies"></textarea>
 
-                </section>
-                <section class="right">
-                    <h2>Totaal</h2>
-                    <div class="totaal-berekening">
-
-                        <div class="subtotal">
-                            <h3>Subtotaal</h3>
-                            <p>€84.50</p>
-                        </div>
-                        <div class="verzending">
-                            <h3>Verzending</h3>
-                            <p>Gratis verzending vanaf 30 euro | Vandaag besteld, binnen 2 werkdagen in huis.</p>
-                        </div>
-                        <div class="totaal">
-                            <h3>Totaal prijs:</h3>
-                            <p>€84.50</p>
-                        </div>
-                    </div>
-
-                    <div class="kortingscode">
-                        <h3>Kortingscode</h3>
-                        <input type="text" placeholder="Kortingscode:">
-                    </div>
-
-                    <button><a href="bestel.html">bestelling afronden</a></button>
-
-                </section>
-
-            </section>
 
         </div>
+
 
 
 
@@ -250,7 +185,7 @@
     </footer>
 
 </body>
-<script src="js/main.js"></script>
+<script src="js/reviews.js"></script>
 <script src="https://kit.fontawesome.com/81350521ed.js" crossorigin="anonymous"></script>
 
 </html>
