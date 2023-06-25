@@ -6,8 +6,6 @@
     text-decoration: underline;
 }
 
-
-
 @media only screen and (max-width: 1300px) {
     .product-page{
         flex-direction: column;

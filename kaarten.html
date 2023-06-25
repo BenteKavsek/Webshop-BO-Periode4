@@ -63,7 +63,7 @@
 
                 <a class="cart-btn" href="winkelwagen.html">
                     <i class="fa-solid fa-bag-shopping cart"></i>
-                    <p>€0,00</p>
+                    <p>€84,50</p>
                 </a>
 
             </section>
@@ -76,20 +76,20 @@
         <div class="containercontent">
             <section class=" product product-variations">
                 <figure class="images">
-                    <img id="productIMG" src="img/kaarten.webp" alt="">
+                    <img id="productIMG" src="img/spel-assortiment/kaarten.webp" alt="">
                 </figure>
                 <div class="choises">
                     <div class="titel">
                         <h1>Kaarten - Speelkaarten</h1>
                     </div>
                     <ul class="variations">
-                        <button onclick="changeVar('/img/kaarten.webp')" class="variation active">1 Pakje</button>
-                        <button onclick="changeVar('/img/Ringtoss/blue.png')" class="variation">Blauw</button>
-                        <button onclick="changeVar('/img/Ringtoss/black.jpeg')" class="variation">Zwart</button>
-                        <button onclick="changeVar('/img/Ringtoss/pink.png')" class="variation">Roze</button>
+                        <button onclick="changeVar('img/spel-assortiment/kaarten.webp')" class="variation active">1 Pakje</button>
+                        <button onclick="changeVar('img/spel-assortiment/kaarten.webp')" class="variation">2 Pakjes</button>
+                        <button onclick="changeVar('img/spel-assortiment/kaarten.webp')" class="variation">3 Pakjes</button>
+                        <button onclick="changeVar('img/spel-assortiment/kaarten.webp')" class="variation">4 Pakjes</button>
                     </ul>
                     <p class="price">€5.95</p>
-                    <div class="add-to-cart-btn">
+                    <div class="add-to-cart-btn" onclick="showPopup()">
                         <button><i class="fa-solid fa-cart-shopping"></i> Plaats in winkelwagen</button>
                     </div>
                 </div>
@@ -124,10 +124,16 @@
                         Sapiente consequatur quae fuga perspiciatis accusantium corrupti vero mollitia ab. Distinctio,
                         ad. Debitis, reiciendis.</p>
                 </div>
-                <button>add to cart</button>
+                <button onclick="showPopup()">add to cart</button>
             </section>
 
         </div>
+
+        <div id="popup" class="popup">
+            <p>Toegevoegd aan winkelwagen!</p>
+        </div>
+
+
     </main>
 
     <footer>

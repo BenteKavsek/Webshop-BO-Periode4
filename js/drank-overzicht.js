@@ -9,6 +9,10 @@ fetch('./json/drank-products.json')
         let productName = data.products[i].name;
         let productPrice = data.products[i].price;
         let productImg = data.products[i].img;
+
+        console.log(productName);
+        console.log(productPrice);
+        console.log(productImg);
         
         let listItem = productList[i].children;
 
@@ -111,4 +115,17 @@ function showFilters_merk() {
       options[i].style.display = "none"
     }
   }
+}
+
+function showPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "flex";
+  setTimeout(function() {
+    hidePopup();
+  }, 1500);
+}
+
+function hidePopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
 }
