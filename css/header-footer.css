@@ -129,6 +129,9 @@ form button{
     gap: 0.5rem;
 }
 
+.fa-bars::before{
+    display: none;
+}
 
 .header-nav nav a{
     text-decoration: none;
@@ -275,12 +278,17 @@ footer > div{
     .header-nav div a, .header-nav a{
         font-size: 1.8rem;
     }
+
 }
 
 
 @media only screen and (max-width: 1110px){
     .footer-lists{
         flex-direction: column;
+    }
+
+    .header-mid img{
+        width: 60%;
     }
 
     .header-nav nav a{
@@ -292,16 +300,67 @@ footer > div{
     }
 }
 
-@media only screen and (max-width: 750px){
-    
+@media only screen and (max-width: 600px){
+
+    .header-nav nav{
+        display: none;
+    }
+
+    .fa-bars::before{
+        display: flex;
+    }
+
+    .header-nav{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        gap: 3rem;
+        margin: 1rem 0;
+    }
+
+    .header-nav a i, .header-nav i{
+        font-size: 2rem;
+    }
 }
 
-
-
 @media only screen and (max-width: 450px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchbar input{
+        display: none;
+    }
+
+    form button{
+        background-color: transparent;
+        color: black;
+        font-weight: 700;
+    }
+
+    .header-mid a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .searchbar i{
+        font-size: 1.2rem;
+    }
 
     .header-nav nav a{
         font-size: 1rem;
     }
+
+    .footer-top{
+        flex-direction: column;
+    }
+
+    .footer-top img{
+        width: 70%;
+    }
+
+
 
 }

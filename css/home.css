@@ -240,6 +240,7 @@ button.button:hover{
     font-size: 2.3rem;
     background-color: #ECECEC;
     border-radius: 2rem;
+    width: 14rem;
     border: 2px solid gray;
 }
 
@@ -471,9 +472,6 @@ button.button:hover{
         width: 100vw;
     }
 
-    main{
-        margin: 0;
-    }
     
     .product-big{
         display: flex;
@@ -484,10 +482,12 @@ button.button:hover{
         width: 80%;
         margin-bottom: 10%;
     }
+
     .HeroSection-content {
       display: flex;
       flex-direction: column;
       gap: 0;
+      font-size: 70%;
     }
 
     .HeroSection-content img {
@@ -526,8 +526,9 @@ button.button:hover{
 }
 
 @media only screen and (max-width: 750px){
-    .header-nav div a, .header-nav i{
-        font-size: 100% ;
+
+    .heroSection{
+        margin-top: 0;
     }
 
     .star{
@@ -535,10 +536,12 @@ button.button:hover{
         left: 5%;
     }
 
-
 }
 
 @media only screen and (max-width: 450px){
+    .product-big-text h3{
+        font-size: 3rem;
+    }
     .reclame-text h2{
         font-size: 2.6rem;
         margin: 0;
@@ -547,5 +550,9 @@ button.button:hover{
     .reclame-text h3{
         font-size: 3rem;
         margin: 0;
+    }
+
+    .heroSection{
+        margin-top: 10rem;
     }
 }

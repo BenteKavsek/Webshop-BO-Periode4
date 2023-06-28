@@ -70,6 +70,7 @@ figure.images{
 
 .variations{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
@@ -115,6 +116,8 @@ figure.images{
 
 .product-description{
     margin-top: 10rem;
+    width: 80%;
+    line-height: 2.4rem;
 }
 
 .product-description h2{
@@ -155,4 +158,19 @@ figure.images{
     border: 1px solid black;
     box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.6);
     z-index: 1000;
+  }
+
+  @media only screen and (max-width: 1050px){
+
+    main{
+        margin-top: 10rem;
+    }
+
+    .product-variations{
+        flex-direction: column;
+    }
+
+    .choises{
+        width: 100%;
+    }
   }

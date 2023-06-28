@@ -10,10 +10,6 @@ fetch('./json/drank-products.json')
         let productPrice = data.products[i].price;
         let productImg = data.products[i].img;
 
-        console.log(productName);
-        console.log(productPrice);
-        console.log(productImg);
-        
         let listItem = productList[i].children;
 
         let nameElement = listItem[1];

@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-
     <header>
         <section class="header-top"></section>
 
@@ -30,7 +28,7 @@
 
                 <div class="header-right">
                     
-                    <form action="/action_page.php">
+                    <form class="searchbar" action="/action_page.php">
                         <input type="text" placeholder="Zoek product">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
@@ -54,45 +52,37 @@
                         <a href="sterke-drank.html">Sterke drank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Mixdrank</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
-                    <div>
+                    <div class="unavailable">
                         <a href="#">Extra's</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </div>
                 </nav>
+                
+                <i class="fa-solid fa-bars"></i>
 
-                <div class="cart-btn">
+                <a class="cart-btn" href="winkelwagen.html">
                     <i class="fa-solid fa-bag-shopping cart"></i>
                     <p>€84,50</p>
-                </div>
+                </a>
 
             </section>
             
         </div>
         <div class="line"></div>
-        <section class="cart-header">
-            <h1>Winkelwagen</h1>
-            <div class="cart-header-nav">
-                <i class="fa-solid fa-house"></i>
-                <a href="index.html"> Home</a>
-                <p>/</p>
-                <p>Winkelwagen</p>
-            </div>
-
-        </section>
     </header>
 
 
     <main>
         <div class="containercontent">
             <section class="titles">
-                <h2>Producten</h2>
-                <h2>Prijs</h2>
-                <h2>Aantal</h2>
-                <h2>Totaal</h2>
+                <h2 class="title">Producten</h2>
+                <h2 class="title">Prijs</h2>
+                <h2 class="title">Aantal</h2>
+                <h2 class="title">Totaal</h2>
             
             </section>
             <section class="items">

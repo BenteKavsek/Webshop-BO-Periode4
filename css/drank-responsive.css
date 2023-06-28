@@ -33,3 +33,13 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 750px){
+    .categorys{
+        flex-direction: column;
+    }
+
+    .category-title{
+            text-align: left;
+    }
+}
